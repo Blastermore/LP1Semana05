@@ -14,7 +14,7 @@ namespace RanDice
 
             Random r = new Random(s);
 
-            for (int x = 0; x < n; x++);
+            for (int x = 0; x < n; x++)
             {
                 sum += r.Next(1,7);
             }
