@@ -6,7 +6,10 @@ namespace RanDice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int n = int.Parse(args[0]);
+            int s = int.Parse(args[1]);
+
+            
         }
     }
 }
