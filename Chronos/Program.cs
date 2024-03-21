@@ -24,7 +24,7 @@ namespace Chronos
 
 
             Console.WriteLine($"Time Elapsed on crono1: {ts1:f3}");
-            Console.WriteLine($"Time Elapsed on crono1: {ts2:f3}");
+            Console.WriteLine($"Time Elapsed on crono2: {ts2:f3}");
 
         }
     }
