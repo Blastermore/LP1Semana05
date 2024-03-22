@@ -11,7 +11,7 @@ namespace MyGame
 
             for(int x = 0; x < array_length; x++)
             {
-                Console.Write($"Nome do inimigo {x + 1}:");
+                Console.Write($"Nome do inimigo {x + 1}: ");
                 string name = Console.ReadLine();
                 Enemy enemy = new Enemy(name);
                 enemies[x] = enemy;
@@ -19,7 +19,7 @@ namespace MyGame
             for(int x = 0; x < array_length; x++)
             {
                 Console.WriteLine($"{enemies[x].GetName()} " +
-                "{enemies[x].GetHealth()} {enemies[x].GetShield()}");
+                $"{enemies[x].GetHealth()} {enemies[x].GetShield()}");
             }
 
         }
