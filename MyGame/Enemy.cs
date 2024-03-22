@@ -68,7 +68,7 @@ namespace MyGame
         }
         public int GetPickedPowerUps()
         {
-
+            return pickedPowerUps;
         }
 
     }

@@ -22,6 +22,9 @@ namespace MyGame
                 $"{enemies[x].GetHealth()} {enemies[x].GetShield()}");
             }
 
+            Console.WriteLine($"{enemies[0].GetPickedPowerUps()}");
+
+
         }
     }
 }
