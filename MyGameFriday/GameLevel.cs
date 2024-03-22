@@ -31,7 +31,7 @@ namespace MyGameFriday
             int contagem = 0;
             for (int i = 0; i < rooms_array.Length;i++)
             {
-                if (rooms_array[i].GetType() != null)
+                if (rooms_array[i] != null)
                 {
                     contagem += 1;
                 }
@@ -42,9 +42,9 @@ namespace MyGameFriday
         {
             for (int i = 0; i < rooms_array.Length;i++)
             {
-                if (rooms_array[i].GetType() != null)
+                if (rooms_array[i] != null)
                 {
-                    Console.WriteLine($"Room {i + 1}: {rooms_array[i]}");
+                    Console.WriteLine($"Room {i + 1}: {rooms_array[i].GetName()}");
                 }
             }
         }
