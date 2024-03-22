@@ -38,17 +38,15 @@ namespace MyGameFriday
             }
             return contagem;
         }
-        public string PrintEnemies()
+        public void PrintEnemies()
         {
-            int contagem = 0;
             for (int i = 0; i < rooms_array.Length;i++)
             {
                 if (rooms_array[i].GetType() != null)
                 {
-                    Console.WriteLine($"Room { i + 1}: {rooms_array[i]}");
+                    Console.WriteLine($"Room {i + 1}: {rooms_array[i]}");
                 }
             }
-            return "WIP";
         }
     }
 }
