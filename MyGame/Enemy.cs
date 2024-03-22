@@ -43,7 +43,7 @@ namespace MyGame
 
         public void SetName(string name)
         {
-            int length = 8;
+            int length = 9;
             this.name = name.Substring(0,length);
         }
     }
