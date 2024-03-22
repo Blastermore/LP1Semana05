@@ -1,6 +1,6 @@
 using System;
 
-namespace PowerUp
+namespace MyGame
 {
     public enum PowerUp
     {

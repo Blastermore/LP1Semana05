@@ -46,5 +46,20 @@ namespace MyGame
             int length = 8;
             this.name = name.Substring(0,length);
         }
+
+        public void PickupPowerUp( PowerUp power, float x)
+        {
+            if (power == PowerUp.Health)
+            {
+                this.health += x;
+                this.health = MathF.Floor(100);
+            }
+            else if(power == PowerUp.Shield)
+            {
+                this.shield += x;
+                this.shield = MathF.Floor(100);
+            }
+        }
+
     }
 }
