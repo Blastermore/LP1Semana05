@@ -7,12 +7,17 @@ namespace MyGame
         private string name;
         private float health;
         private float shield;
-
+        static int pickedPowerUps;
         public Enemy(string name)
         {
             SetName(name);
             health = 100;
             shield = 0;
+        }
+
+        static Enemy()
+        {
+            pickedPowerUps = 0;
         }
 
         public string GetName()
@@ -59,6 +64,11 @@ namespace MyGame
                 this.shield += x;
                 this.shield = MathF.Floor(100);
             }
+            pickedPowerUps += 1;
+        }
+        public int GetPickedPowerUps()
+        {
+
         }
 
     }
