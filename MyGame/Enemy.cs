@@ -49,7 +49,15 @@ namespace MyGame
         public void SetName(string name)
         {
             int length = 8;
-            this.name = name.Substring(0,length);
+
+            if (name.Length < 8)
+            {
+                this.name = name;
+            }
+            else
+            {
+                this.name = name.Substring(0,length);
+            }
         }
 
         public void PickupPowerUp( PowerUp power, float x)
