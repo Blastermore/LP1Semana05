@@ -10,7 +10,7 @@ namespace MyGame
 
         public Enemy(string name)
         {
-            SetName();
+            SetName(name);
             health = 100;
             shield = 0;
         }
@@ -41,7 +41,7 @@ namespace MyGame
             return shield;
         }
 
-        public void SetName()
+        public void SetName(string name)
         {
             int length = 8;
             this.name = name.Substring(0,length);
